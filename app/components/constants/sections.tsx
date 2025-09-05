@@ -1,33 +1,30 @@
 import { Badge } from "../ui/badge"
+import Image from "next/image"
 
 export const sections = [
-  { 
-    id: 'hero', 
-    subtitle: <Badge variant="outline" className="text-white border-white">S1: Feb 15</Badge>,
-    title: "It's time to build.",
+  {
+    id: 'hero',
+    subtitle: <Badge variant="outline" className="text-white border-white opacity-50">AI & Martech</Badge>,
+    titleBelow: "It's time to make symbiosis.",
     showButton: true,
-    buttonText: 'apply to s5'
+    buttonText: 'Download our Pitch Deck',
+    content: <Image src="/logo.svg" alt="logo" width={500} height={100} />
   },
-  { 
-    id: 'about', 
-    title: 'Why Us?', 
-    content: 'We provide resources, mentorship, and a supportive network to help you grow your projects.' 
+  {
+    id: 'about',
+    title: 'Why Us?',
+    content: "At Simbiotic, we blend strategy, creativity, and technology to spark business growth. We're a team of passionate innovators driven by results, crafting bespoke solutions that bring brands and people together in the ever- evolving digital world.",
+  }, {
+    id: 'features',
+    title: 'What We Offer',
+    content: "Artificial intelligence isn’t a competitive advantage anymore — it’s the new baseline. If you're still treating it as a ‘future technology,’ you're already losing the battle for the next decade of leadership."
   },
-  { 
-    id: 'features', 
-    title: 'What We Offer', 
-    content: 'Access to expert advice, networking opportunities, and cutting-edge tools to accelerate your growth.' 
-  },
-  { 
-    id: 'testimonials', 
-    title: 'Success Stories', 
-    content: 'Hear from solo builders who have transformed their side projects into thriving businesses.' 
-  },
-  { 
-    id: 'join', 
-    title: 'Get Started', 
+  {
+    id: 'join',
+    title: 'Get Started',
     content: 'Ready to take your side project to the next level? Join our community today and start building your future.',
     showButton: true,
-    buttonText: 'Join Now'
+    buttonText: 'Join Now',
+    buttonLink: 'mailto:hello@simbiotic.ai'
   },
 ]

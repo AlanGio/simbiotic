@@ -49,9 +49,8 @@ export default function LandingPage() {
         {sections.map((section, index) => (
           <button
             key={section.id}
-            className={`w-3 h-3 rounded-full my-2 transition-all ${
-              index === activeSection ? 'bg-white scale-150' : 'bg-gray-600'
-            }`}
+            className={`w-3 h-3 rounded-full my-2 transition-all ${index === activeSection ? 'bg-white scale-150' : 'bg-gray-600'
+              }`}
             onClick={() => handleNavClick(index)}
           />
         ))}
@@ -60,8 +59,8 @@ export default function LandingPage() {
         className="fixed top-0 left-0 right-0 h-0.5 bg-white origin-left z-30"
         style={{ scaleX }}
       />
-      <div 
-        ref={containerRef} 
+      <div
+        ref={containerRef}
         className="h-full overflow-y-auto snap-y snap-mandatory"
       >
         {sections.map((section, index) => (

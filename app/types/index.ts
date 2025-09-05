@@ -2,11 +2,13 @@ import type { ReactNode } from "react"
 
 export interface Section {
   id: string
-  title: string
+  title?: string
   subtitle?: ReactNode
-  content?: string
+  titleBelow?: string
+  content?: ReactNode
   showButton?: boolean
   buttonText?: string
+  buttonLink?: string
 }
 
 export interface SectionProps extends Section {
