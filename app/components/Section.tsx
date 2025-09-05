@@ -6,7 +6,7 @@ import type { SectionProps } from "../types"
 
 export default function Section({ id, title, titleBelow, subtitle, content, isActive, showButton, buttonText, buttonLink }: SectionProps) {
   return (
-    <section id={id} className="relative h-screen w-full snap-start flex flex-col justify-center p-8 md:p-16 lg:p-24 gap-8">
+    <section id={id} className="relative h-screen w-full snap-start flex flex-col justify-center p-8 px-10 md:p-16 lg:p-24 gap-4">
       {subtitle && (
         <motion.div
           initial={{ opacity: 0, y: 20 }}

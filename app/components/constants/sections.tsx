@@ -8,7 +8,7 @@ export const sections = [
     titleBelow: "It's time to make symbiosis.",
     showButton: true,
     buttonText: 'Download our Pitch Deck',
-    content: <Image src="/logo.svg" alt="logo" width={500} height={100} />
+    content: <Image src="/logo.svg" alt="logo" width={490} height={100} />
   },
   {
     id: 'about',
