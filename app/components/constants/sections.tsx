@@ -9,7 +9,7 @@ export const sections = [
         AI & Martech
       </Badge>
     ),
-    titleBelow: <p className="text-[#D0C13B]">It's time to make symbiosis.</p>,
+    titleBelow: <p className="text-[#D0C13B]">Tiempo de hacer simbiosis.</p>,
     showButton: false,
     content: <Image src="/logo.svg" alt="logo" width={490} height={100} />,
   },
@@ -80,11 +80,11 @@ export const sections = [
     ),
   },
   {
-    id: "start",
-    title: "Get Started",
-    content: "Contactanos. Hagamos Simbiosis.",
+    id: "contact",
+    title: "Contactanos",
+    content: "Hagamos Simbiosis.",
     showButton: true,
-    buttonText: "hello@simbiotic.ai",
-    buttonLink: "mailto:hello@simbiotic.ai",
+    buttonText: "hola@simbiotic.io",
+    buttonLink: "mailto:hola@simbiotic.io",
   },
 ];
