@@ -1,30 +1,90 @@
-import { Badge } from "../ui/badge"
-import Image from "next/image"
+import { Badge } from "../ui/badge";
+import Image from "next/image";
 
 export const sections = [
   {
-    id: 'hero',
-    subtitle: <Badge variant="outline" className="text-white border-white opacity-50">AI & Martech</Badge>,
-    titleBelow: "It's time to make symbiosis.",
-    showButton: true,
-    buttonText: 'Download our Pitch Deck',
-    content: <Image src="/logo.svg" alt="logo" width={490} height={100} />
+    id: "hero",
+    subtitle: (
+      <Badge variant="outline" className="text-white border-white opacity-50">
+        AI & Martech
+      </Badge>
+    ),
+    titleBelow: <p className="text-[#D0C13B]">It's time to make symbiosis.</p>,
+    showButton: false,
+    content: <Image src="/logo.svg" alt="logo" width={490} height={100} />,
   },
   {
-    id: 'about',
-    title: 'Why Us?',
-    content: "At Simbiotic, we blend strategy, creativity, and technology to spark business growth. We're a team of passionate innovators driven by results, crafting bespoke solutions that bring brands and people together in the ever- evolving digital world.",
-  }, {
-    id: 'features',
-    title: 'What We Offer',
-    content: "Artificial intelligence isn’t a competitive advantage anymore — it’s the new baseline. If you're still treating it as a ‘future technology,’ you're already losing the battle for the next decade of leadership."
+    id: "features",
+    title:
+      "El marketing ya no es intuición, es ciencia aumentada por creatividad.",
+    content:
+      "Aportamos <b>Martech, AI, Analytics, Ad Operations, y Gen AI Content.</b>\n\nTenemos ADN de emprendedores tecnológicos y experiencia en transformar negocios a partir de growth models desde la estrategia hasta la última línea de código.\n\nEn definitiva: hacemos que la <b>tecnología para marketing</b> deje de ser una promesa y se convierta en un motor real de crecimiento.",
+    image: (
+      <Image
+        src="/assets/simbiotic-slide.svg"
+        alt="Simbiotic slide"
+        width={900}
+        height={800}
+        style={{
+          fill: "#D0C13B",
+        }}
+      />
+    ),
   },
   {
-    id: 'join',
-    title: 'Get Started',
-    content: 'Ready to take your side project to the next level? Join our community today and start building your future.',
-    showButton: true,
-    buttonText: 'Join Now',
-    buttonLink: 'mailto:hello@simbiotic.ai'
+    id: "way",
+    image: (
+      <div className="w-full h-full mx-auto">
+        <Image
+          src="/assets/simbiotic-slide2.svg"
+          alt="Simbiotic slide"
+          width={1200}
+          height={1000}
+          style={{
+            fill: "#D0C13B",
+          }}
+        />
+      </div>
+    ),
   },
-]
+  {
+    id: "profiles",
+    image: (
+      <div className="w-full h-full mx-auto">
+        <Image
+          src="/assets/simbiotic-profiles.svg"
+          alt="Simbiotic slide"
+          width={1200}
+          height={1000}
+          style={{
+            fill: "#D0C13B",
+          }}
+        />
+      </div>
+    ),
+  },
+  {
+    id: "tools",
+    image: (
+      <div className="w-full h-full mx-auto">
+        <Image
+          src="/assets/last.svg"
+          alt="Simbiotic slide"
+          width={1200}
+          height={1000}
+          style={{
+            fill: "#D0C13B",
+          }}
+        />
+      </div>
+    ),
+  },
+  {
+    id: "start",
+    title: "Get Started",
+    content: "Contactanos. Hagamos Simbiosis.",
+    showButton: true,
+    buttonText: "hello@simbiotic.ai",
+    buttonLink: "mailto:hello@simbiotic.ai",
+  },
+];
